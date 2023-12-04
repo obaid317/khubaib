@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyBold Italic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyExtrabold.otf") format("opentype");
+  font-weight: 800; /* Extra bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyExtrabold Italic.otf") format("opentype");
+  font-weight: 800; /* Extra bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyHeavy.otf") format("opentype");
+  font-weight: 900; /* Heavy */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyHeavy Italic.otf") format("opentype");
+  font-weight: 900; /* Heavy */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyLight.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyLight Italic.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyMedium.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyMedium Italic.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbySemibold.otf") format("opentype");
+  font-weight: 600; /* Semi-bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbySemibold Italic.otf") format("opentype");
+  font-weight: 600; /* Semi-bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyThin.otf") format("opentype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("./VisbyThin Italic.otf") format("opentype");
+  font-weight: 100; /* Thin */
+  font-style: italic;
+}

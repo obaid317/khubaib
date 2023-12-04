@@ -1,0 +1,32 @@
+.tools_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+
+}
+
+.tools_heading p {
+    display: flex;
+    justify-content: start;
+    margin: 100px 0 30px 94px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    /* 90% */
+    opacity: 0.4;
+    color: #FFFFFF;
+}
+
+.tools {
+    color: #FFF;
+    display: flex;
+    width: 230px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    opacity: 0.4;
+}

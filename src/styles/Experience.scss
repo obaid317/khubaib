@@ -1,0 +1,43 @@
+.wrapper {
+    margin-top: 123px;
+
+    .upper_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .experience_heading {
+            color: #FFF;
+            text-align: center;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 68px;
+        }
+
+        .experience_paragraph {
+            width: 1000px;
+            height: 104px;
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+
+        }
+    }
+
+    .lower_wrapper {
+        .content {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+.info_container {
+    margin-top: 194px;
+    display: flex;
+
+    .content {
+        margin-left: 94px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ._lineOne {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    ._lineTwo {
+        margin-left: 124px;
+    }
+
+    ._lineThree {
+        margin-left: 521px;
+    }
+
+    ._lineFour {
+        margin-left: 124px;
+    }
+
+    .capital_words {
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110px;
+        text-transform: uppercase;
+    }
+
+    .color_white {
+        color: #FFF;
+    }
+
+    .color_specific_blue {
+        color: #C0EBFF;
+    }
+}
