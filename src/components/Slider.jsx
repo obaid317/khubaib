@@ -15,7 +15,7 @@ import barrow from "../assets/back-arrow.png";
 import farrow from "../assets/forward-arrow.png";
 import { CSSTransition } from "react-transition-group";
 // import { listItemButtonClasses } from "@mui/material";
-const VerticalCarousel = () => {
+const SliderComp = () => {
   const [items, setItems] = useState([]); // Your data array
   const [swiped, setSwiped] = useState(false);
   const itemsToLoad = [
@@ -24,7 +24,8 @@ const VerticalCarousel = () => {
       text: "Item 6",
       topLogo: lg1,
       bgimg: img7,
-      rightHeading: "Internet Banking App Launch",
+      images: [img1, img2, img3],
+      rightHeading: "Quack Society App",
       rightPara:
         "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
       bottomLogo: lg1,
@@ -37,7 +38,8 @@ const VerticalCarousel = () => {
       text: "Item 6",
       topLogo: lg1,
       bgimg: img6,
-      rightHeading: "Internet Banking App Launch 2",
+      images: [img4, img5, img6],
+      rightHeading: "Filli",
       rightPara:
         "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
       bottomLogo: lg1,
@@ -50,7 +52,8 @@ const VerticalCarousel = () => {
       text: "Item 5",
       topLogo: lg1,
       bgimg: img5,
-      rightHeading: "Internet Banking App  3",
+      images: [img7, img1, img2],
+      rightHeading: "IBIZI",
       rightPara:
         "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
       bottomLogo: lg1,
@@ -58,60 +61,6 @@ const VerticalCarousel = () => {
       subheading: "Cash Management Software",
       listName: ["Khubaib", "Huzaifa", "Ubaid"],
     },
-    {
-      color: "#96715E",
-      text: "Item 4",
-      topLogo: lg1,
-      bgimg: img4,
-      rightHeading: "Internet Banking App  5",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-    {
-      color: "#B3625D",
-      text: "Item 3",
-      topLogo: lg1,
-      bgimg: img3,
-      rightHeading: "Internet Banking App Launch",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-    {
-      color: "#7EA1B2",
-      text: "Item 2",
-      topLogo: lg1,
-      bgimg: img2,
-      rightHeading: "Internet Banking App Launch",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-
-    {
-      color: "#A185F4",
-      text: "Item 1",
-      topLogo: lg1,
-      bgimg: img1,
-      rightHeading: "Internet Banking App Launch",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-
     // { color: "#364332", text: "Item 6" },
   ];
   const [selectedIndex, setSelectedIndex] = useState(
@@ -134,26 +83,26 @@ const VerticalCarousel = () => {
   useEffect(() => {
     setItems(itemsToLoad);
     setSelectedIndex(itemsToLoad[itemsToLoad.length - 1]);
-     
+
     // setSelectedIndex(itemsToLoad[itemsToLoad.length-1])
   }, []);
-  
+
   useEffect(() => {
-    
-    // if (currentIndex < items.length - 1) {  
-      setTimeout(() => { setCurrentIndex(items.length-1);
-      setIsVisible(true);  }, 500);
-      // } 
-     
+    // if (currentIndex < items.length - 1) {
+    setTimeout(() => {
+      setCurrentIndex(items.length - 1);
+      setIsVisible(true);
+    }, 500);
+    // }
+
     // setSelectedIndex(itemsToLoad[itemsToLoad.length-1])
   }, [items]);
 
   const handleSwipe = (direction) => {
     if (direction === "up" && items.length > 1) {
       setSwiped(true);
-    
+
       setTimeout(() => {
-        
         setIsVisible(false);
 
         setItems((prevItems) => {
@@ -164,7 +113,6 @@ const VerticalCarousel = () => {
         setDirection("next");
         // setSelectedIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
         setSwiped(false);
-      
       }, 10); // Adjust this delay to match your animation speed
     } else {
       itemsToLoad.forEach((val, ind) => {
@@ -205,18 +153,24 @@ const VerticalCarousel = () => {
   return (
     <div className="education_wrapper" style={{ justifyContent: "start" }}>
       <div className="left_wrapper" style={{ width: "auto" }}>
-        <p>Most Prestigious Moments</p>
+        <p>Exclusively design by me.</p>
 
         <div className="image_div">
           <img src={line} alt="pic" />
         </div>
-        <h1 style={{ margin: "0px", padding: "0px" }}>Awards </h1>
-        <br style={{ margin: "0px", padding: "0px" }} />
-        <h1 style={{ margin: "0px", padding: "0px" }}>& Honors </h1>
+        <h1 style={{ margin: "0px", padding: "0px" }}>Works </h1>
       </div>
       <div style={{ width: "auto" }} className="right_wrapper">
         <div style={{ display: "flex" }}>
-          <Swipeable   >
+          {items[items.length - 1] ? (
+            <ImageSlider
+              images={items[items.length - 1]?.images}
+            
+            />
+          ) : (
+            <></>
+          )}
+          {/* <Swipeable   >
             <div
               style={{
                 height: "550px",
@@ -260,7 +214,7 @@ const VerticalCarousel = () => {
                 </animated.div>
               ))}
             </div>
-          </Swipeable>
+          </Swipeable> */}
           <div style={{ width: "60%" }}>
             <div className="transition-container">
               <div className="transition-content">
@@ -268,13 +222,23 @@ const VerticalCarousel = () => {
                   <div className="container">
                     <div className={`box ${isVisible ? "visible" : ""}`}>
                       {/* {    items[items.length-1]?.text} */}
-                      <h1 className={`box ${isVisible ? "visible" : ""}`} style={{ color: "white", marginTop: "210px" }}>
-                      {" "}
-                      { items[items.length-1]?.rightHeading}
-                    </h1>
-                    <p className={`box ${isVisible ? "visible" : ""}`} style={{ color: "#e1dcdc", margin: "15px 0px" }}>
-                      { items[items.length-1]?.rightPara}
-                    </p>
+                      <h1
+                        className={`box ${isVisible ? "visible" : ""}`}
+                        style={{
+                          color: "white",
+                          marginTop: "150px",
+                          fontSize: "45px",
+                        }}
+                      >
+                        {" "}
+                        {items[items.length - 1]?.rightHeading}
+                      </h1>
+                      <p
+                        className={`box ${isVisible ? "visible" : ""}`}
+                        style={{ color: "#e1dcdc", margin: "15px 0px" }}
+                      >
+                        {items[items.length - 1]?.rightPara}
+                      </p>
                     </div>
                     {/* <button
                       onClick={() => {
@@ -316,4 +280,31 @@ const VerticalCarousel = () => {
   );
 };
 
-export default VerticalCarousel;
+const ImageSlider = ({ images }) => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Update the index to display the next image
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 1500); // Change image every 1 second
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className="slider-container">
+      <img   style={{ height: "400px", margin: "0px 40px" }} src={images[index]} alt={`Slide ${index + 1}`} />
+    </div>
+  );
+};
+
+// Usage
+const images = [
+  img1,
+  img2,
+  img3,
+  // Add more image URLs here
+];
+
+export default SliderComp;

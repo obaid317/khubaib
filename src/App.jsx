@@ -11,6 +11,7 @@ import Tools from './components/Tools';
 import './styles/Home.scss';
 import Education from './components/Education';
 import VerticalCarousel from './components/VerticalCarousel';
+import SliderComp from './components/Slider';
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
       <Education />
       <Info />
    
- 
+ <SliderComp></SliderComp>
       <VerticalCarousel items={items} />
    
       <Skills />
