@@ -15,8 +15,8 @@ const Education = () => {
         <div className="box_wrapper">
           <div className="upper_box" >
             <p className="degree_year">2023 - Present</p>
-            <h1 className="degree_name">Master’s In Project Management</h1>
-            <p className="uni_name">Bahria University</p>
+            <h1 className="degree_name">UI UX Foundation </h1>
+            <p className="uni_name">Google</p>
           </div>
           <div className="dotted_line" >
           </div>

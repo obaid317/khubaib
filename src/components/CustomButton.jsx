@@ -1,5 +1,5 @@
 import '../styles/Button.scss'
-import download_icon from '../assets/download_icon.png'
+import download_icon from '../assets/Download.svg'
 import cv from '../../src/files/Khubaib-UIUX-Resume.pdf'
 
 
@@ -11,9 +11,9 @@ const CustomButton = () => {
                     <div className='text-btn'>
                         Download CV
                     </div>
-                    <div className='download_btn_icon'>
+                    {/* <div className='download_btn_icon'>
                         <img src={download_icon} alt="download-icon" />
-                    </div>
+                    </div> */}
                 </div>
             </a>
         </div>

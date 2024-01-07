@@ -1,43 +1,218 @@
 .wrapper {
-    margin-top: 123px;
+  margin-top: 123px;
 
-    .upper_wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+  .img-text-div {
+    background-image:  
+      url("../assets/exp-1.png");
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px; 
+    transition:all 1.5s ease;
+	transition-delay:2s;
+  }
+  .img-text-div:hover{
+    transition-delay:3s;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),    url("../assets/exp-1.png"); 
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    
+  }
+   .img-text-div-two:hover{
+    transition-delay:3s;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),    url("../assets/exp-2.png"); 
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    
+  } 
+  .img-text-div-three:hover{
+    transition-delay:3s;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),    url("../assets/exp-3.png"); 
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    
+  }
+  .img-text-div-two {
+    background-image:  url("../assets/exp-2.png");
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    
 
-        .experience_heading {
-            color: #FFF;
-            text-align: center;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 68px;
-        }
+  }
+  .img-text-div-three {
+    background-image: url("../assets/exp-3.png");
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px 0px 0px; 
+  }
+  .img-text-div:hover .img-text-head {
+    display: block;
+  }
+ 
+  .img-text-div:hover .img-text-main{
+    display: block; 
+  }
+  .img-text-div:hover  .img-text-durat{
 
-        .experience_paragraph {
-            width: 1000px;
-            height: 104px;
-            color: #FFF;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 26px;
+    display: block;
+  }
+  .img-text-div:hover  .logo-exp{
 
-        }
+  height: auto;
+  width: auto;
+  }
+
+
+
+
+
+
+
+
+
+  .img-text-div-two:hover .img-text-head {
+    display: block;
+  }
+ 
+  .img-text-div-two:hover .img-text-main{
+    display: block; 
+  }
+  .img-text-div-two:hover  .img-text-durat{
+
+    display: block;
+  }
+  .img-text-div-two:hover  .logo-exp{
+
+  height: auto;
+  width: auto;
+  }
+
+
+
+
+  .img-text-div-three:hover .img-text-head {
+    display: block;
+  }
+ 
+  .img-text-div-three:hover .img-text-main{
+    display: block; 
+  }
+  .img-text-div-three:hover  .img-text-durat{
+
+    display: block;
+  }
+  .img-text-div-three:hover  .logo-exp{
+
+  height: auto;
+  width: auto;
+  }
+
+  .logo-exp{
+    height: 0px;
+    width: 0px;
+
+  }
+  .img-text-head {
+    display: none;
+    color: white; 
+    font-size: 20px;
+    padding: 0px 0px;
+    font-weight: 600;
+  }
+  .img-text-main {
+    display: none; 
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    line-height: 22px;
+  }
+  .img-text-durat {
+    display: none; 
+    color: white;
+    opacity: 0.7;
+    font-size: 16px;
+    padding: 5px 0px;
+  }
+  .upper_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .experience_heading {
+      color: #fff;
+      text-align: center;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 68px;
     }
 
-    .lower_wrapper {
-        .content {
-            margin-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 26px;
-        }
+    .experience_paragraph {
+      width: 1000px;
+      height: 104px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
     }
+  }
 
+  .lower_wrapper {
+    .content {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+    }
+  }
 }

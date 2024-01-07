@@ -9,10 +9,10 @@
 .tools_heading p {
     display: flex;
     justify-content: start;
-    margin: 100px 0 30px 94px;
+    margin: 100px 0 30px 50px;
     font-size: 100px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 90px;
     /* 90% */
     opacity: 0.4;
@@ -30,3 +30,43 @@
     border: 2px solid #FFF;
     opacity: 0.4;
 }
+
+
+.tools:hover {
+    border: none;
+    opacity: 0.7;
+    --border-size: 3px;
+    --border-angle: 0turn;
+  
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #131313,
+        #131313,
+        #131313
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        rgb(224, 228, 231),
+        rgb(255, 255, 255)
+      );
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  

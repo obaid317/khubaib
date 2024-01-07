@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <img src={logo} alt="Logo" />
       </div>
       <div onClick={() => settoggleMenu(!toggleMenu)}>
-        <img src={breadcrumb} alt="Breadcrumb" />
+        <img src={breadcrumb}    alt="Breadcrumb" style={{cursor:"pointer",height:"17px"}}/>
       </div>
     </div>
   )

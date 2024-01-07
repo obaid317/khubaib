@@ -294,7 +294,7 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="slider-container">
-      <img   style={{ height: "400px", margin: "0px 40px" }} src={images[index]} alt={`Slide ${index + 1}`} />
+      <img   style={{ height: "400px", margin: "0px 40px 40px 70px" }} src={images[index]} alt={`Slide ${index + 1}`} />
     </div>
   );
 };

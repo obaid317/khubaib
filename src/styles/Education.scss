@@ -3,6 +3,8 @@
     justify-content: space-between;
     margin-top: 212px;
 
+
+
     .container {
       display: flex;
       flex-direction: column;
@@ -162,4 +164,48 @@
             }
         }
     }
+}
+
+.divvv{
+margin-top: 200px;
+  background: #C8B6FF;
+  border-radius: 50%;
+  font-size: 250px;
+  height: 1em;
+  width: 1em;
+  filter: blur(160px);
+  overflow: overlay;
+}
+
+.divvv-two{
+
+  margin-top: 0px;
+  background:  #ff9f2270;
+  border-radius: 50%;
+  font-size: 200px;
+  height: 1em;
+  width: 1em;
+  filter: blur(100px);
+  overflow: overlay;
+}
+
+.contact-main{
+
+  background-image: url(/src/assets/hand1.png);
+  background-repeat: no-repeat;
+  background-position: -200px 94px;
+}
+
+.contact-main:hover{
+  background-image: url(/src/assets/hand2.png);
+}
+
+.footer-media{
+padding: 0px 15px;
+border-right: 1px solid white;
+
+}
+.footer_container{
+  padding :10px 100px 25px 100px;
+  color: white;
 }

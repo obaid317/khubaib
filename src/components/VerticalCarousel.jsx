@@ -203,7 +203,7 @@ const VerticalCarousel = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="education_wrapper" style={{ justifyContent: "start" }}>
+    <div id="vertical-slider" className="education_wrapper" style={{ justifyContent: "start" }}>
       <div className="left_wrapper" style={{ width: "auto" }}>
         <p>Most Prestigious Moments</p>
 
@@ -239,8 +239,9 @@ const VerticalCarousel = () => {
                     transitionDelay: "1s",
                     transition: "all 1s",
                     transform: index == items.length - 1 ? "scale(1.03)" : "",
+                    marginTop: index == items.length - 1 ? "10px" : "0px",
                     // marginTop:index == items.length-1?"10px":"0px",
-                    opacity: index == items.length - 1 ? "1" : "0.9",
+                    opacity: index == items.length - 1 ? "1" : "1",
                     // width: `${300 + index * 10}px`,
                     borderRadius: "8px",
                     top: index > 0 ? `${index * 3}%` : "0",

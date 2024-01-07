@@ -1,33 +1,70 @@
 .skills_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 26px;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 20px;
 }
 
 .skills_heading p {
-    display: flex;
-    justify-content: start;
-    margin: 200px 0 30px 94px;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 90px;
-    /* 90% */
-    opacity: 0.4;
-    color: #FFFFFF;
+  display: flex;
+  justify-content: start;
+  margin: 200px 0 30px 50px;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 90px;
+  /* 90% */
+  opacity: 0.4;
+  color: #ffffff;
 }
 
 .skills {
-    color: #FFF;
-    display: flex;
-    width: 230px;
-    height: 160px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    border: 2px solid #FFF;
-    opacity: 0.4;
+  color: #fff;
+  display: flex;
+  width: 230px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  opacity: 0.4;
+}
+
+.skills:hover {
+  border: none;
+  opacity: 0.7;
+  --border-size: 3px;
+  --border-angle: 0turn;
+
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #131313,
+      #131313,
+      #131313
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 20%,
+      rgb(224, 228, 231),
+      rgb(255, 255, 255)
+    );
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }

@@ -12,6 +12,7 @@ import './styles/Home.scss';
 import Education from './components/Education';
 import VerticalCarousel from './components/VerticalCarousel';
 import SliderComp from './components/Slider';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -25,15 +26,19 @@ function App() {
 
       <Navbar toggleMenu={toggleMenu} settoggleMenu={settoggleMenu} />
       <Banner />
+
       <Experience />
+      <SliderComp></SliderComp>
+      <VerticalCarousel items={items} />
       <Education />
       <Info />
    
- <SliderComp></SliderComp>
-      <VerticalCarousel items={items} />
+      
    
       <Skills />
       <Tools />
+      
+      <Contact></Contact>
       <Footer />
     </div>
   )

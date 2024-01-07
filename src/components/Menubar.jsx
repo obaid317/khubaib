@@ -4,7 +4,8 @@ import close_icon from './../assets/close_icon.png';
 
 const Menubar = (props) => {
   const { toggleMenu, settoggleMenu } = props;
-  const menuItem = ['About', 'Experience', 'Work', 'Awards', 'Education', 'Skills', 'Contact'];
+  const menuItem = ['', '', '', '', '', 'SKILLS', 'CONTACT'];
+  const menuItems = [{title:'ABOUT',id:""}, {title:'EXPERIENCE',id:""}, {title:'WORK',id:""}, {title:'AWARDS',id:""}, {title:'EDUCATION',id:""}, {title:'SKILLS',id:""}, {title:'CONTACT',id:"vertical-slider"}];
 
   const socialItem = ['linkedin', 'behance', 'instagram', 'dribble'];
 
@@ -14,13 +15,15 @@ const Menubar = (props) => {
       <div className='menu_sub_container'>
         <div className='icon_div'>
           <div className='icon' onClick={() => settoggleMenu(!toggleMenu)}>
-            <img src={close_icon} alt="Close Menu" />
+            <img src={close_icon} style={{height:"17px",cursor:"pointer"}} alt="Close Menu" />
           </div>
         </div>
         <div className='item_container'>
-          {menuItem.map((item, index) => (
+          {menuItems.map((item, index) => (
             <div className='item_sub_container' key={index} >
-              <h2>{item}</h2>
+              <a className='menu-title' href={"#"+item.id}> 
+                {item.title}
+                </a>
             </div>
           ))}
         </div>
@@ -28,7 +31,7 @@ const Menubar = (props) => {
         <div className='socail_container'>
           {socialItem.map((item, index) => (
             <div className='socail_sub_container' key={index} >
-              <h2>{item}</h2>
+              <h3 className='menu-title-two'>{item}</h3>
             </div>
           ))}
         </div>
