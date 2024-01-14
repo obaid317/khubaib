@@ -29,12 +29,13 @@
     opacity:1;
 }
     .menu_sub_container {
-        width: 720px;
+        width: 50vw;
          height:100vh;
         flex-shrink: 0;
         background: rgba(18, 18, 18, 0.80);
         backdrop-filter: blur(30px);
-
+        position: fixed;
+        z-index: 99999;
 
         .icon_div {
             width: 100%;
@@ -42,7 +43,7 @@
             justify-content: flex-end;
 
             .icon {
-                margin: 27px 94px 27.67px 94px;
+                margin:21px 65px 27.67px 94px;
                 width: 34px;
                 height: 24px;
                 flex-shrink: 0;

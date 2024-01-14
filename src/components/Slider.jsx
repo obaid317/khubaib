@@ -6,62 +6,114 @@ import lg1 from "../assets/meezan.png";
 import img1 from "../assets/Illustrations/1.png";
 import img2 from "../assets/Illustrations/2.png";
 import img3 from "../assets/Illustrations/3.png";
-import img4 from "../assets/Illustrations/4.png";
+
+import img11 from "../assets/images-back/IBIZI/Property 1=Default.png";
+import img12 from "../assets/images-back/IBIZI/Property 1=Variant2.png";
+import img13 from "../assets/images-back/IBIZI/Property 1=Variant3.png";
+
+import img21 from "../assets/images-back/Filli/Property 1=Default.png";
+import img22 from "../assets/images-back/Filli/Property 1=Variant2.png";
+import img23 from "../assets/images-back/Filli/Property 1=Variant3.png";
+
+import img31 from "../assets/images-back/Layndayn/Property 1=Default.png";
+import img32 from "../assets/images-back/Layndayn/Property 1=Variant2.png";
+import img33 from "../assets/images-back/Layndayn/Property 1=Variant3.png";
+
+import img41 from "../assets/images-back/Qarya/Property 1=Default.png";
+import img42 from "../assets/images-back/Qarya/Property 1=Variant2.png";
+import img43 from "../assets/images-back/Qarya/Property 1=Variant3.png";
+
+import img51 from "../assets/images-back/Spareats/Property 1=Default.png";
+import img52 from "../assets/images-back/Spareats/Property 1=Variant2.png";
+import img53 from "../assets/images-back/Spareats/Property 1=Variant3.png"; //Suh yoon lee
+
+import img61 from "../assets/images-back/Suh yoon lee/Property 1=Default.png";
+import img62 from "../assets/images-back/Suh yoon lee/Property 1=Variant2.png";
+import img63 from "../assets/images-back/Suh yoon lee/Property 1=Variant3.png";
+
 import img5 from "../assets/Illustrations/5.png";
 import img6 from "../assets/Illustrations/6.png";
-import img7 from "../assets/Illustrations/7.png";
+import img7 from "../assets/download_icon.png";
 import line from "../assets/edu_line.png";
 import barrow from "../assets/back-arrow.png";
+import Snackbar from "@mui/material/Snackbar";
 import farrow from "../assets/forward-arrow.png";
 import { CSSTransition } from "react-transition-group";
 // import { listItemButtonClasses } from "@mui/material";
 const SliderComp = () => {
   const [items, setItems] = useState([]); // Your data array
   const [swiped, setSwiped] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
   const itemsToLoad = [
     {
-      color: "#364332",
-      text: "Item 6",
-      topLogo: lg1,
-      bgimg: img7,
-      images: [img1, img2, img3],
-      rightHeading: "Quack Society App",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-    {
-      color: "#364332",
-      text: "Item 6",
-      topLogo: lg1,
-      bgimg: img6,
-      images: [img4, img5, img6],
-      rightHeading: "Filli",
-      rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
-    },
-    {
-      color: "#544F41",
-      text: "Item 5",
-      topLogo: lg1,
-      bgimg: img5,
-      images: [img7, img1, img2],
+      color: ["#000000", "#FFFFFF", "#FFFFFF"],
+      link: "http://www.ibizi.com/",
+      download: "https://apps.apple.com/pk/app/ibizi/id1659590288",
+      learnMore: "",
+
+      images: [img11, img12, img13],
       rightHeading: "IBIZI",
       rightPara:
-        "Lorem ipsum dolor sit amet consectetur. Pellentesque parturient est adipiscing sit vel tempor. Odio rutrum tellus pellentesque viverra sit ut. Dignissim urna ultricies velit nisl.",
-      bottomLogo: lg1,
-      mainHeading: "Launch CMD \n Sep 10 2023",
-      subheading: "Cash Management Software",
-      listName: ["Khubaib", "Huzaifa", "Ubaid"],
+        "Introducing IBIZI, where automotive elegance meets seamless functionality. As a product designer for this innovative car dealership platform, I blend style and user-centric design for an unparalleled experience.",
     },
-    // { color: "#364332", text: "Item 6" },
+    {
+      color: ["#F6DD63", "#FFF1CC", "black"],
+      link: " https://figmashort.link/x6GbKE",
+      download: "",
+      learnMore: "",
+      bgimg: img6,
+      images: [img21, img22, img23],
+      rightHeading: "Filli",
+      rightPara:
+        "Indulge your senses in the world of Filli, where culinary creativity meets gastronomic delight. Our restaurant products redefine flavors, offering a delectable journey for every palate. Taste perfection with Filli.",
+    },
+    {
+      color: ["#F17F76", "#D3F0FF", "black"],
+      link: "www.layndayn.io",
+      download: "",
+      learnMore: "",
+      bgimg: img5,
+      images: [img31, img32, img33],
+      rightHeading: "LaynDayn",
+      rightPara:
+        "Welcome to LaynDayn, where financial technology meets sleek design. As the mind behind this fintech marvel, I've crafted an intuitive user experience for seamless financial interactions. Explore innovation with LaynDayn!",
+    },
+    {
+      color: ["#EEFFEE", "white", "#544F41"],
+      link: "https://figmashort.link/6nKban",
+      download: "",
+      learnMore: "",
+      bgimg: img5,
+      images: [img41, img42, img43],
+      rightHeading: "Qwakk  Society App",
+      rightPara:
+        "Introducing Qwakk, ultimate solution for streamlined society management. Elevate community living with our innovative product, designed to simplify tasks, enhance communication, and foster seamless collaboration.",
+    },
+    {
+      color: ["#D8E2DC", "#FFAEB0", "black"],
+      link: "http://www.spareats.de/",
+      download:
+        "https://play.google.com/store/apps/details?id=com.spareats.mobile",
+      learnMore: "",
+      bgimg: img5,
+      images: [img51, img52, img53],
+      rightHeading: "Spareat App",
+      rightPara:
+        "Welcome to Spareats, where I blend design and gastronomy to create a delectable food app experience. From mouthwatering visuals to seamless navigation, every pixel is a flavor journey.",
+    },
+    {
+      color: ["black", "#D3F0FF", "white"],
+      link: "https://suhyoonlee.com/",
+      download: "",
+      learnMore: "",
+      bgimg: img5,
+      images: [img61, img62, img63],
+      rightHeading: "Suh yoon lee",
+      rightPara:
+        "Welcome to the Suh Yoon Lee book writer web experience! Immerse yourself in a world of literary wonders as I design a digital sanctuary for the acclaimed wordsmith's works.",
+    },
+    // { color: "#364332",   },
   ];
   const [selectedIndex, setSelectedIndex] = useState(
     itemsToLoad[itemsToLoad.length - 1]
@@ -144,15 +196,43 @@ const SliderComp = () => {
   // };
   const transitions = useTransition(items, {
     from: { opacity: 0, transform: "translateY(10%)" },
-    enter: { opacity: 1, transform: "translateY(0%)" },
-    leave: { opacity: 0, transform: "translateY(15%)", marginTop: 20 },
+    enter: { opacity: 1, transform: "translateY(20%)" },
+    leave: { opacity: 0, transform: "translateY(-65%)", marginTop: 20 },
     config: { tension: 500, friction: 100, duration: 400 }, // Adjust animation config as needed
   });
   const [isVisible, setIsVisible] = useState(false);
+  const handleClick = () => {
+    setOpen(true);
+  };
 
+  useEffect(() => {
+    if (open == true) {
+      console.log("ajljlalja")
+      // setTimeout(() => {
+      //   handleClose;
+      // }, 2000);
+    }
+  }, [open]);
+
+  const handleClose = () => {
+   
+
+    setOpen(false);
+  };
   return (
     <div className="education_wrapper" style={{ justifyContent: "start" }}>
-      <div className="left_wrapper" style={{ width: "auto" }}>
+      <Snackbar
+        open={open}
+        autoHideDuration={2000}
+        onClose={handleClose}
+        message="The app will be live soon."
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "center"
+       }}
+        // action={action}
+      />
+      <div className="left_wrapper">
         <p>Exclusively design by me.</p>
 
         <div className="image_div">
@@ -163,58 +243,11 @@ const SliderComp = () => {
       <div style={{ width: "auto" }} className="right_wrapper">
         <div style={{ display: "flex" }}>
           {items[items.length - 1] ? (
-            <ImageSlider
-              images={items[items.length - 1]?.images}
-            
-            />
+            <ImageSlider images={items[items.length - 1]?.images} />
           ) : (
             <></>
           )}
-          {/* <Swipeable   >
-            <div
-              style={{
-                height: "550px",
-                overflow: "hidden",
-                position: "relative",
-                display: "flex",
 
-                justifyContent: "center",
-                width: "450px",
-              }}
-            >
-              {transitions((style, item, _, index) => (
-                <animated.div
-                  key={item.text}
-                  style={{
-                    ...style,
-                    background: item.bgimg,
-                    marginLeft: "10px",
-                    position: "absolute",
-                    transitionDelay: "1s",
-                    transition: "all 1s",
-                    transform: index == items.length - 1 ? "scale(1.03)" : "",
-                    // marginTop:index == items.length-1?"10px":"0px",
-                    opacity: index == items.length - 1 ? "1" : "0.9",
-                    // width: `${300 + index * 10}px`,
-                    borderRadius: "8px",
-                    top: index > 0 ? `${index * 3}%` : "0",
-                  }}
-                >
-                  <img
-                    src={item.bgimg}
-                    style={{
-                      border: "none",
-                      padding: "10px",
-                      borderRadius: "8px",
-                      width: `${270 + index * 10}px`,
-                      // background: item.bgimg,
-                      height: "370px",
-                    }}
-                  ></img>
-                </animated.div>
-              ))}
-            </div>
-          </Swipeable> */}
           <div style={{ width: "60%" }}>
             <div className="transition-container">
               <div className="transition-content">
@@ -226,13 +259,53 @@ const SliderComp = () => {
                         className={`box ${isVisible ? "visible" : ""}`}
                         style={{
                           color: "white",
-                          marginTop: "150px",
+                          margin: "130px 0px 10px 0px",
                           fontSize: "45px",
                         }}
                       >
                         {" "}
                         {items[items.length - 1]?.rightHeading}
                       </h1>
+                      <div style={{ display: "flex" }}>
+                        <div
+                          onClick={() => {
+                            let toOpen =
+                              items[items.length - 1]?.link.toString();
+                            console.log("toopen", toOpen);
+                            window.open(toOpen);
+                          }}
+                          className="button-div"
+                          style={{
+                            background: items[items.length - 1]?.color[0],
+                          }}
+                        >
+                          <p
+                            style={{ color: items[items.length - 1]?.color[2] }}
+                          >
+                            Visit Live
+                          </p>
+                        </div>
+
+                        <div
+                          onClick={() => {
+                            let toOpen =
+                              items[items.length - 1]?.download.toString();
+                            console.log("toopen", toOpen);
+                            if (toOpen == "") {
+                              setOpen(true);
+                              return;
+                            }
+                            window.open(toOpen);
+                          }}
+                          className="button-div"
+                          style={{
+                            background: items[items.length - 1]?.color[1],
+                          }}
+                        >
+                          <p>Download App</p>
+                        </div>
+                      </div>
+
                       <p
                         className={`box ${isVisible ? "visible" : ""}`}
                         style={{ color: "#e1dcdc", margin: "15px 0px" }}
@@ -240,14 +313,6 @@ const SliderComp = () => {
                         {items[items.length - 1]?.rightPara}
                       </p>
                     </div>
-                    {/* <button
-                      onClick={() => {
-                        handleNext();
-                     
-                      }}
-                    >
-                      Next
-                    </button> */}
                   </div>
                 </div>
               </div>
@@ -256,8 +321,7 @@ const SliderComp = () => {
               <div
                 className="roun-div"
                 onClick={() => {
-                  // handleSwipe("up");
-                  // handlePrevious();
+                  handleSwipe("up");
                 }}
               >
                 {" "}
@@ -294,7 +358,11 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="slider-container">
-      <img   style={{ height: "400px", margin: "0px 40px 40px 70px" }} src={images[index]} alt={`Slide ${index + 1}`} />
+      <img
+        style={{ height: "400px", margin: "0px 40px 40px 70px" }}
+        src={images[index]}
+        alt={`Slide ${index + 1}`}
+      />
     </div>
   );
 };

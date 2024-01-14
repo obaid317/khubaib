@@ -10,13 +10,13 @@ const Experience = () => {
       <div className="upper_wrapper">
         <div className="experience_heading">Experience</div>
         <div className="experience_paragraph">
-          Lorem ipsum dolor sit amet consectetur. Eu mauris praesent amet augue
-          eget. Ut scelerisque dictum consequat purus ac vitae est. Vestibulum
-          suscipit platea enim eu natoque aliquet turpis. Fames tellus pharetra
-          vitae sit mauris ornare. Orci pulvinar gravida et proin tempor
-          convallis velit sapien quis. Consectetur aliquet cursus ultricies
-          interdum mauris egestas dui imperdiet nulla. Nibh mauris convallis sed
-          pellentesque eros. Iaculis lorem lacus nulla aliquet eget et.
+        As a UI/UX Designer across diverse industries, I bring a unique blend of creativity and functionality
+        to digital experiences. I've honed my skills in crafting intuitive interfaces and engaging user
+        experiences that resonate with users in fields ranging from different industries, e.g., technology,
+        healthcare, finance. My passion lies in seamlessly blending aesthetics with user-centric design,
+        ensuring that every project not only looks visually stunning but also delivers a delightful and
+        intuitive user journey. Explore my portfolio to witness how I've transformed ideas into immersive
+         and impactful digital solutions. Let's collaborate to elevate your next project's user experience!
         </div>
         <div>
           <CustomButton />
@@ -29,19 +29,20 @@ const Experience = () => {
             <p className="img-text-durat">Mar 2023 - Present</p>
             <p className="img-text-head">UI UX Designer</p>
             <p className="img-text-main">
-              Lorem ipsum dolor sit amet consectetur. Magna elit nunc odio
-              viverra. Sed elementum pretium aliquet odio dictum et in non. Nunc
-              elementum potenti feugiat pellentesque diam.
+            I contributing my design expertise to enhance the user interface and experience. Collaborating 
+            with cross-functional teams, I played a pivotal role in crafting visually appealing and 
+            intuitive digital solutions for banking services.
             </p>
           </div>
           <div className="img-text-div-two">
           <img src={exp1} alt="exp" className="logo-exp" />
-            <p className="img-text-durat">Sep 2021 - Feb 2023s</p>
+            <p className="img-text-durat">Sep 2021 - Feb 2023</p>
             <p className="img-text-head">UI UX Designer</p>
             <p className="img-text-main">
-              Lorem ipsum dolor sit amet consectetur. Magna elit nunc odio
-              viverra. Sed elementum pretium aliquet odio dictum et in non. Nunc
-              elementum potenti feugiat pellentesque diam.
+            I contributed to creating visually appealing and user-centric digital experiences. Collaborating 
+            with cross-functional teams. My role involved crafting intuitive interfaces, conducting 
+            user research, and ensuring a seamless blend of creativity and functionality in our digital 
+            solutions.
             </p>
           </div>
           <div className="img-text-div-three">
@@ -49,9 +50,10 @@ const Experience = () => {
             <p className="img-text-durat">Jun 2021 - Aug 2021</p>
             <p className="img-text-head">UI UX Designer (Intern)</p>
             <p className="img-text-main">
-              Lorem ipsum dolor sit amet consectetur. Magna elit nunc odio
-              viverra. Sed elementum pretium aliquet odio dictum et in non. Nunc
-              elementum potenti feugiat pellentesque diam.
+            As a UI/UX Designer intern at NXTLABS, I work closely with the design team to learn about 
+            wireframes, prototypes, and UI designs for web and mobile applications. My seniors also 
+            conduct user research and usability testing phase to inform design decisions and improve the
+            user experience of our products.
             </p>
           </div>
         </div>

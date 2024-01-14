@@ -1,6 +1,13 @@
 .navbar_container {
    height: 60px;
+   width: 100vw;
    display: flex;
+   justify-content: space-between;
+   padding: 20px 94px 0px 94px;
+   position: fixed;
+   background: #121212;
+   z-index: 9999;
+   margin-bottom: 60px;   display: flex;
    justify-content: space-between;
    padding: 20px 94px 0px 94px;
 }

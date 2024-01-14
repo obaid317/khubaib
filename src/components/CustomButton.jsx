@@ -1,6 +1,6 @@
 import '../styles/Button.scss'
 import download_icon from '../assets/Download.svg'
-import cv from '../../src/files/Khubaib-UIUX-Resume.pdf'
+import cv from '../../src/files/Khubaibullah-UIUX.pdf'
 
 
 const CustomButton = () => {

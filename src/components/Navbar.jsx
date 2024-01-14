@@ -6,7 +6,7 @@ import breadcrumb from '../assets/breadcrumb.png'
 const Navbar = (props) => {
   const { toggleMenu, settoggleMenu } = props
 
-  console.log(toggleMenu);
+ // console.log(toggleMenu);
   return (
     <div className="navbar_container">
       <div>

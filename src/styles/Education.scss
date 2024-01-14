@@ -3,16 +3,38 @@
     justify-content: space-between;
     margin-top: 212px;
 
-
+.button-div{
+  background: grey;
+  padding: 10px 20px;
+  border-radius: 9px;
+  display: flex;
+  margin: 0px 10px 0px 0px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.img-slider-butt-one{
+  height: 10px;
+  transform: rotate(-34deg);
+  width: 17px;
+  margin: 4px 10px 0px 10px;
+}
+.img-slider-butt {
+  
+   
+  
+  margin: 3px 0px 0px 10px;
+}
 
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    
+    .abcd{
+      height: 380px;
+    }
     .box {
-  
+     
       margin: 5px;
       overflow: hidden;
       transition: transform 0.5s ease, opacity 0.5s ease;
@@ -74,7 +96,7 @@
     }
 
     .left_wrapper {
-        width: 50%;
+        // width: 50%;
         margin-left: 90px;
         display: flex;
         flex-direction: column;
@@ -99,7 +121,7 @@
             font-family: Visby;
             font-size: 64px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 68px;
         }
     }
@@ -109,18 +131,19 @@
         width: 50%;
 
         .box_wrapper {
-            width: 712px;
+            width: 50vw;
             padding: 34px 0 0 70px;
-            height: 604px;
+            height: 85vh;
             min-width: auto;
             border-radius: 40px;
             border-top: 3px solid #fff1cc;
             border-right: 3px solid #fff1cc;
+            transition: transform 0.5s ease;
             border-bottom: 3px solid #fff1cc;
             background: linear-gradient(240deg,
                     rgba(255, 241, 204, 0.6) 3.66%,
                     rgba(255, 241, 204, 0) 64.58%);
-
+                    transition: 0s background;
             .upper_box {
                 .degree_year {
                     margin-top: 36px;
@@ -163,6 +186,13 @@
                 min-width: 80%;
             }
         }
+
+        .box_wrapper:hover{
+          background: linear-gradient(300deg,
+          rgba(255, 241, 204, 0.6) 3.66%,
+          rgba(255, 241, 204, 0) 64.58%);
+          transition-delay:1s;
+        }
     }
 }
 
@@ -203,8 +233,17 @@ margin-top: 200px;
 .footer-media{
 padding: 0px 15px;
 border-right: 1px solid white;
-
+opacity: 0.7;
+cursor: pointer;
+max-height: 60%;
 }
+
+.footer-media:hover{
+   opacity: 1;
+
+  }
+  
+
 .footer_container{
   padding :10px 100px 25px 100px;
   color: white;

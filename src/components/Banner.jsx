@@ -15,7 +15,7 @@ const Banner = () => {
         return () => clearTimeout(intervalId);
       }, []);
     return (
-        <div className="banner_content">
+        <div className="banner_content ">
             <div className="left_content">
                 <div className='job_title'>
                 <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
@@ -25,11 +25,10 @@ const Banner = () => {
                     KHUBAIBULLAH
                 </div>
                 <div className='job_deatils'>
-                    {`Winner of the world's most prestigious web design awards in
-                    the fields of UI, UX, and innovation. With a diverse background
-                    in art direction, design leadership, website and app UI/UX
-                    design, 3D design, and branding, I bring a well-rounded skill
-                    set to every project I take on`}
+                    {`Greetings! I'm Khubaibullah, a dynamic UI/UX Designer with a proven track record of three years, 
+                    transforming visions into captivating digital experiences. My journey in design has traversed diverse
+                     industries. I specialize in creating designs that strike the perfect balance between form and function.
+                      Join me on a visual exploration of how I turn ideas into visually stunning and user-friendly realities`}
                 </div>
                 <CustomButton />
             </div>

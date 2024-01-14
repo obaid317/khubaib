@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className="education_wrapper">
       <div className="left_wrapper">
-        <p>Most Prestigious Moments</p>
+        <p>Educational Milestones</p>
         <div className="image_div">
           <img src={line} alt="pic" />
         </div>
